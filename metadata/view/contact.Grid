@@ -1,0 +1,164 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "contact.Grid",
+        "designer|userAlias": "contactgrid",
+        "designer|initialView": true,
+        "height": null,
+        "width": null,
+        "iconCls": "icon-grid",
+        "title": "Contacts",
+        "store": "Contacts"
+    },
+    "id": "ExtBox1-ext-gen6101",
+    "designerId": "98d4007f-7f03-4454-b900-9c75fa9cd8c9",
+    "cn": [
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn",
+                "width": 170,
+                "dataIndex": "name",
+                "flex": 1,
+                "text": "NAME"
+            },
+            "designerId": "0515716a-aff6-47a6-a8af-064dda87e952"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "width": 160,
+                "dataIndex": "phone",
+                "flex": 1,
+                "text": "PHONE #"
+            },
+            "designerId": "739d9ebf-761f-435f-b7ab-69435d2868da"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn2",
+                "width": 170,
+                "dataIndex": "email",
+                "flex": 1,
+                "text": "EMAIL"
+            },
+            "designerId": "410ea188-e0d1-4bde-851d-1171fc7cf568"
+        },
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView",
+                "designer|displayName": "dataview",
+                "emptyText": "no contacts found"
+            },
+            "designerId": "a5d5e33d-3004-42d5-b461-863c481fc924"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar",
+                "designer|displayName": "toolbar"
+            },
+            "designerId": "4bffbbc7-d1af-4aa3-9070-3d048016cd5b",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "action": "add",
+                        "designer|userClassName": "MyButton",
+                        "iconCls": "icon-save",
+                        "text": "Add"
+                    },
+                    "designerId": "996c345d-1491-426b-9947-0d94ba69937b",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "action": "delete",
+                        "designer|userClassName": "MyButton1",
+                        "iconCls": "icon-delete",
+                        "text": "Delete"
+                    },
+                    "designerId": "d466b348-9376-47ec-9bc8-9fc7164458bc",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "pagingtoolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyPagingToolbar",
+                "designer|displayName": "pagingToolbar",
+                "width": 360,
+                "displayInfo": true,
+                "emptyMsg": "No contacts to display",
+                "store": "Contacts"
+            },
+            "designerId": "7b5aabee-17c5-403d-82f4-c97c334c0647"
+        }
+    ]
+}

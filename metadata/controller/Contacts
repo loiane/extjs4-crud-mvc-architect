@@ -1,0 +1,185 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Contacts",
+        "models": [
+            "Contact"
+        ],
+        "stores": [
+            "Contacts"
+        ],
+        "views": [
+            "contact.Grid",
+            "contact.Edit"
+        ]
+    },
+    "id": "ExtBox1-ext-gen21272",
+    "designerId": "1e1c1af8-0392-49db-8cde-f43fbb06cb91",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "dblClickEdit",
+                "fn": "dblClickEdit",
+                "implHandler": [
+                    "//autoShow is already enabled",
+                    "var edit = Ext.create('ExtMVC.view.contact.Edit');",
+                    "        ",
+                    "        if(record){",
+                    "        \tedit.down('form').loadRecord(record);",
+                    "        }"
+                ],
+                "name": "itemdblclick",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.View",
+                "designer|controlQuery": "contactgrid dataview"
+            },
+            "designerId": "11be54f4-0875-40a5-a58e-f8f3ea5df53c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonClickAdd",
+                "fn": "onButtonClickAdd",
+                "implHandler": [
+                    "this.dblClickEdit();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "contactgrid button[action=add]"
+            },
+            "designerId": "cca33b4c-2715-4587-bd13-fbb06f326dfa"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonClickDelete",
+                "fn": "onButtonClickDelete",
+                "implHandler": [
+                    "var grid = this.getContactGrid(),",
+                    "    \trecord = grid.getSelectionModel().getSelection(), ",
+                    "        store = this.getContactsStore();",
+                    "",
+                    "\t    store.remove(record);",
+                    "\t    store.sync({",
+                    "success : function() {",
+                    "           store.load();",
+                    "    }",
+                    "});"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "contactgrid button[action=delete]"
+            },
+            "designerId": "7dc8902d-6c8c-45a8-9e18-46a62863ac36"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonClickSave",
+                "fn": "onButtonClickSave",
+                "implHandler": [
+                    "var win    = button.up('window'),",
+                    "            form   = win.down('form'),",
+                    "            record = form.getRecord(),",
+                    "            values = form.getValues(),",
+                    "            store = this.getContactsStore();",
+                    "        ",
+                    "        var isNew = false;",
+                    "        ",
+                    "\t\tif (values.id > 0){",
+                    "\t\t\trecord.set(values);",
+                    "\t\t} else{",
+                    "\t\t\trecord = Ext.create('ExtMVC.model.Contact');",
+                    "\t\t\trecord.set(values);",
+                    "\t\t\tstore.add(record);",
+                    "            isNew = true;",
+                    "\t\t}",
+                    "        ",
+                    "\t\twin.close();",
+                    "store.sync({",
+                    "success : function() {",
+                    "       if (isNew){",
+                    "           store.load();",
+                    "        }",
+                    "    }",
+                    "});",
+                    "",
+                    "      "
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "contactform button[action=save]"
+            },
+            "designerId": "5e53613f-544a-48da-8f2c-73319db28e87"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonClickCancel",
+                "fn": "onButtonClickCancel",
+                "implHandler": [
+                    " var win    = button.up('window'),",
+                    "            form   = win.down('form');",
+                    "",
+                    "form.getForm().reset();",
+                    "",
+                    "win.close();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "contactform button[action=cancel]"
+            },
+            "designerId": "55706d8d-9980-4cb0-99f9-a682ceba768a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "contactGrid",
+                "ref": "contactGrid",
+                "selector": "contactgrid",
+                "xtype": "gridpanel"
+            },
+            "designerId": "5aa850cb-e080-48be-9d26-c6a3b7db37bb"
+        }
+    ]
+}

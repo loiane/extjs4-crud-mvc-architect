@@ -1,0 +1,72 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Contact",
+        "idProperty": "id"
+    },
+    "id": "ExtBox1-ext-gen2036",
+    "designerId": "041feef3-1d8b-4b69-838f-6ef5292f35ef",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "de8ad64d-9928-4125-8f68-2292a08fc086"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "name",
+                "type": "string"
+            },
+            "designerId": "aa56e4e6-31bb-4908-9460-0971ecbda6b1"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "phone",
+                "type": "string"
+            },
+            "designerId": "7a4c89aa-ee19-4526-ba3f-312b8bd0ce11"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "email",
+                "type": "string"
+            },
+            "designerId": "d251eb32-5532-4a2a-b299-59beca19b8b7"
+        }
+    ]
+}

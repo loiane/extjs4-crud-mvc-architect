@@ -1,0 +1,200 @@
+{
+    "type": "window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "fieldDefaults": null,
+        "designer|userClassName": "contact.Edit",
+        "designer|userAlias": "contactform",
+        "autoShow": true,
+        "height": 168,
+        "width": 398,
+        "layout": "fit",
+        "iconCls": "icon-user",
+        "title": "Create/Edit Contact"
+    },
+    "configAlternates": {
+        "fieldDefaults": "object"
+    },
+    "id": "ExtBox1-ext-gen12851",
+    "designerId": "40a2ef60-ec80-4f77-9d3b-db3a5ce31abf",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "fieldDefaults",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "form",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyForm",
+                "designer|displayName": "form",
+                "padding": null,
+                "style": [
+                    "background-color: #fff;"
+                ],
+                "bodyPadding": 10,
+                "title": null
+            },
+            "designerId": "327615d8-0117-462b-bc19-7dd860cc02d9",
+            "cn": [
+                {
+                    "type": "hiddenfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyHiddenField",
+                        "name": "id",
+                        "fieldLabel": "Label"
+                    },
+                    "designerId": "2910ec7d-5808-4553-933e-41179b7e5780"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField",
+                        "name": "name",
+                        "fieldLabel": "Name",
+                        "msgTarget": "side",
+                        "allowBlank": false,
+                        "maxLength": 255
+                    },
+                    "designerId": "a9d275ad-f7f3-402f-bd46-8532b785b4d4"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField1",
+                        "name": "phone",
+                        "fieldLabel": "Phone #",
+                        "msgTarget": "side",
+                        "allowBlank": false,
+                        "maxLength": 255
+                    },
+                    "designerId": "491fc8f9-3ab3-478f-a5ab-bab3e4a23397"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField2",
+                        "name": "email",
+                        "fieldLabel": "Email",
+                        "msgTarget": "side",
+                        "allowBlank": false,
+                        "maxLength": 255,
+                        "vtype": "email"
+                    },
+                    "designerId": "f29959c3-8a56-4f9f-a523-6084f28f170a"
+                },
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "designer|userClassName": "MyToolbar1",
+                        "designer|displayName": "toolbar"
+                    },
+                    "designerId": "a7f8e993-bbe3-4854-8ebc-70ce9303dd81",
+                    "cn": [
+                        {
+                            "type": "tbfill",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyFill"
+                            },
+                            "designerId": "b1cecf86-f90f-4766-9cd4-99dba4919373"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "action": "cancel",
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton2",
+                                "iconCls": "icon-reset",
+                                "text": "Cancel"
+                            },
+                            "designerId": "d4f49a58-6fd2-4a61-9d5e-f361ab1ff5bd",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "action",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "action": "save",
+                                "layout|flex": null,
+                                "formBind": true,
+                                "designer|userClassName": "MyButton3",
+                                "iconCls": "icon-save",
+                                "text": "Save"
+                            },
+                            "designerId": "39999f9f-a8c4-4696-b03a-123c491bb23b",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "action",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

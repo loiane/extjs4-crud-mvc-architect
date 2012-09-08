@@ -1,0 +1,93 @@
+{
+    "name": "extjs4.crud.mvc",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 613,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000497,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "992e8ba4-6156-4c7f-9602-3acde222b5f8": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "041feef3-1d8b-4b69-838f-6ef5292f35ef": {
+            "paths": [
+                "metadata/model/Contact",
+                "app/model/override/Contact.js",
+                "app/model/Contact.js"
+            ],
+            "className": "Contact"
+        },
+        "0d9c9b21-0166-43fa-b5c4-c3c15b5c1f3c": {
+            "paths": [
+                "metadata/store/Contacts",
+                "app/store/override/Contacts.js",
+                "app/store/Contacts.js"
+            ],
+            "className": "Contacts"
+        },
+        "98d4007f-7f03-4454-b900-9c75fa9cd8c9": {
+            "paths": [
+                "metadata/view/contact.Grid",
+                "app/view/override/contact/Grid.js",
+                "app/view/contact/Grid.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "contact.Grid"
+        },
+        "46437f5d-e556-4dbd-bb27-bd8b38a2cff6": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "40a2ef60-ec80-4f77-9d3b-db3a5ce31abf": {
+            "paths": [
+                "metadata/view/contact.Edit",
+                "app/view/override/contact/Edit.js",
+                "app/view/contact/Edit.js"
+            ],
+            "className": "contact.Edit"
+        },
+        "1e1c1af8-0392-49db-8cde-f43fbb06cb91": {
+            "paths": [
+                "metadata/controller/Contacts",
+                "app/controller/override/Contacts.js",
+                "app/controller/Contacts.js"
+            ],
+            "className": "Contacts"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "98d4007f-7f03-4454-b900-9c75fa9cd8c9",
+            "40a2ef60-ec80-4f77-9d3b-db3a5ce31abf"
+        ],
+        "store": [
+            "0d9c9b21-0166-43fa-b5c4-c3c15b5c1f3c"
+        ],
+        "controller": [
+            "1e1c1af8-0392-49db-8cde-f43fbb06cb91"
+        ],
+        "model": [
+            "041feef3-1d8b-4b69-838f-6ef5292f35ef"
+        ],
+        "resource": [
+            "992e8ba4-6156-4c7f-9602-3acde222b5f8",
+            "46437f5d-e556-4dbd-bb27-bd8b38a2cff6"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

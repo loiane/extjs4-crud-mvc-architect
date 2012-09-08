@@ -1,0 +1,71 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Contacts",
+        "autoLoad": true,
+        "storeId": "contactsStore",
+        "model": "Contact",
+        "pageSize": 35
+    },
+    "id": "ExtBox1-ext-gen3288",
+    "designerId": "0d9c9b21-0166-43fa-b5c4-c3c15b5c1f3c",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "designer|displayName": "proxy",
+                "api": [
+                    "{",
+                    "        \tcreate: 'php/criaContato.php', ",
+                    "            read: 'php/listaContatos.php',",
+                    "            update: 'php/atualizaContato.php',",
+                    "            destroy: 'php/deletaContato.php'",
+                    "        }"
+                ]
+            },
+            "designerId": "72ecc02c-356c-46d2-84ae-2b4934881184",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader",
+                        "designer|displayName": "reader",
+                        "root": "contacts"
+                    },
+                    "designerId": "6ba02d6d-a01a-40f7-b92d-8d4685206835"
+                },
+                {
+                    "type": "jsonwriter",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonWriter",
+                        "designer|displayName": "writer",
+                        "encode": true,
+                        "root": "contacts"
+                    },
+                    "designerId": "9414d818-9f34-4133-ac62-20a830d77d0e"
+                }
+            ]
+        }
+    ]
+}

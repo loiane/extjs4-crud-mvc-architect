@@ -1,0 +1,17 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoCreateViewport": true,
+        "name": "ExtMVC",
+        "controllers": [
+            "Contacts"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1737",
+    "designerId": "application"
+}
